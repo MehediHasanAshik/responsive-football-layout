@@ -1,0 +1,219 @@
+body{
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    margin: 0px;
+}
+
+/* header css starts  */
+header{
+    background-color: rgba(45, 37, 160, 1);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 156px;
+    padding-top: 20px;
+    margin-right: 124px;
+    margin-bottom: 50px;
+    /* background-color: rgba(45, 37, 160, 1); */
+    
+}
+
+.nav-items li{
+    display: inline-block;
+    margin-right: 36px;
+}
+
+.nav-items li a{
+    color: white;
+    text-decoration: none;
+    transition: font-size .4s ease-in;
+}
+
+.nav-items li a:hover{
+    font-size: 20px;
+}
+.login a{
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        width: 168px;
+        height: 44px;
+        padding: 10px 24px;
+        background-color: rgba(224, 44, 109, 1);
+}
+
+.header-detail{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    flex-direction: row;
+    /* background-color: rgba(45, 37, 160, 1); */
+}
+.header-info{
+    margin-right: 102px;
+    margin-left: 156px;
+    font-size: 25px;
+    font-weight: 500 bold;
+    line-height: 40px;
+    color: white;
+}
+.header-info a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    width: 168px;
+    height: 44px;
+    padding: 10px 24px;
+    background-color: rgba(224, 44, 109, 1);
+    transition: font-size .5s, border-radius .5s, box-shadow .5s ease-in-out;
+}
+
+.header-info a:hover{
+    font-size: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 40px gray;
+
+}
+
+/* .header-info{
+    font-size: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 40px gray;
+
+} */
+
+.header-banner> img{
+    width: 556px;
+    height: 438px;
+    margin-right: 140px;
+
+}
+/* header css ends */
+
+/* container css starts from here */
+.conatiner{
+    background-color: #FFFFFF;;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+
+}
+.player{
+    width: 330px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+}
+.player-img img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.highlight-detail{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 100px 150px;
+}
+.highlight-info{
+    width: 466px;
+    height: 309px;
+}
+.highlight-info h2{
+    font-weight: 500 bolder;
+    font-size: 30px;
+}
+.highlight-info a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    width: 168px;
+    height: 44px;
+    padding: 10px 24px;
+    background-color: rgba(224, 44, 109, 1);
+    transition: font-size .5s, border-radius .5s, box-shadow .5s ease-in-out;
+}
+
+.highlight-info a:hover{
+    font-size: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 40px gray;
+}
+
+.highlight-img img{
+    width: 567px;
+    height: 427px;
+    margin-left: 70px;
+}
+/* container ends here */
+
+/* Footer starts from here */
+
+.footer-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+
+}
+
+.footer-detail img{
+    width: 420px;
+    height: 150px;
+}
+
+.logos{
+    font-size: 30px;
+    color: rgb(8, 97, 85);
+    /* transition: transform 2s ease-in; */
+}
+
+.logos i:hover{
+    transform: scale(1.5);
+    transition: transform .5s ease-in;
+}
+
+footer p{
+    font-size: 30px;
+}
+@media only screen and (max-width:650px){
+    .navbar{
+        display: none;
+    }
+    .header-detail
+    {
+        display: flex;
+        width: 100%;
+        margin: 0px;
+        flex-direction: column;
+    }
+    .header-info{
+        margin-left: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+    .conatiner{
+        width: 100%;
+    }
+    .players{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 5px;
+    }
+    .highlight-detail{
+        flex-direction: column;
+    }
+    
+}
